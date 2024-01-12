@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.net{
+    width: 1200px;
+    height: 2800px;
+    margin: 0 auto;
+}
+/* 头部 */
+.title{
+    width: 100%;
+    height: 72px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.area{
+    float: left;
+    margin-top: 22px;
+    margin-left: 57px;
+}
+.title img{
+    width: 92px;
+    height: 43px;
+    float: left;
+    margin-top: 10px;
+}
+/* 地区 */
+.title .area img[alt="logoArea"]{
+    width: 12px;
+    height: 17px;
+    margin-top: 4px;
+    margin-right: 5px;
+    float: left;
+}
+.title .area span{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ #otherArea{
+    width: 620px;
+    height: 730px;
+    background-color:white;
+    color: #242323;
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 370px;
+    z-index: 3;
+    margin-left: 20px;
+}
+#otherArea p a{
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+#otherArea p a:hover{
+    color: #ff1268;
+}
+/* 首页分类 */
+.title .classify{
+    overflow: auto;
+    margin-top: 23px;
+    padding-left: 36px;
+    width: 100px;
+    height: 72px;
+    float: left;
+}
+.title .classify li{
+    float: left;
+}
+.title .classify li:first-child{
+    margin-left: -11px;
+}
+.title .classify li:last-child{
+    margin-left: 11px;
+}
+.title .classify li a{
+    font-size: 16px;
+    color: black;
+}
+.title .classify li a:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+.title .search{
+    outline: none;
+    float: left;
+    margin-top: 16px;
+    margin-left:288px;
+    width: 401px;
+    height: 46px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.title .search img{
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+.title .search input{
+    font-size: 16px;
+    width: 319px;
+    height: 46px;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 44px;
+    line-height: 46px;
+    background-color: #f8f8f8;
+    opacity: 0.3;
+   
+}
+.title .search .btnSearch{
+    width: 82px;
+    height: 45px;
+    background-color: #ff1268;
+    color: aliceblue;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 317px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+/* 登录下载 */
+.title .fun{
+    width: 164px;
+    height: 72px;
+    float: left;
+    margin-left: 21px;
+    margin-top: 27px;
+    position: relative;
+}
+.title .fun span{
+    font-size: 16px;
+    margin-left: 30px;
+    padding-left: 17px;
+}
+.title .fun span:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+.fun img[alt="logoLogin"]{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 15px;
+    top: -11px;
+}
+.fun img[alt="logoDownload"]{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 100px;
+    top: -11px;
+}
+#loginOther{
+    width: 120px;
+    height: 130px;
+    display: none;
+    position: absolute;
+    top: 59px;
+    left: 1380px;
+    z-index: 99;
+    padding-top: 10px;
+}
+ #downloadOther{
+    width: 87px;
+    height: 87px;
+    display: none;
+    position: absolute;
+    top: 59px;
+    left: 1470px;
+    z-index: 99;
+}
+#downloadOther img{
+    width: 87px;
+    height: 87px;
+}
+#loginOther p{
+    border-bottom: 1px solid #f8f8f8;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom:11px;
+}
+
+/* 轮播图 */
+#banner{
+    width: 100%;
+    height:320px;
+    /* background-image: url(../images/banner1.png);
+    background-size: cover; */
+    position: relative;
+    z-index: 1;
+}
+
+
+#banner img{
+    width: 1200px;
+    height: 320px;
+    display: none;
+}
+#banner .selected{
+    display: block;
+}
+#banner #prev{
+    width: 56px;
+    height: 64px;
+    color: #f8f8f8;
+    background-color: #00000080;
+    opacity: 0.5;
+    position: absolute;
+    top:124px;
+    left: 0;
+    text-align: center;
+    line-height: 64px;
+    font-size: 52px;
+}
+#banner #next{
+    width: 56px;
+    height: 64px;
+    color: #f8f8f8;
+    background-color: #00000080;
+    opacity: 0.5;
+    position: absolute;
+    top:124px;
+    right: 0;
+    text-align: center;
+    line-height: 64px;
+    font-size: 52px;
+}
+/* 列表 */
+.list{
+    overflow: hidden;
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 118px;
+    margin-top: 11px;
+}
+.list p{
+    font-size: 16px;
+    margin-top: 47px;
+    margin-left: -16px;
+}
+.list .add{
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 33px;
+    background-image: url(../images/列表.png);
+    background-size: 100% auto;
+}
+.list .concert{
+    margin-left: 30px;
+}
+.list p:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+.list .drama{
+    float: left;
+    background-position: 0 -65px;
+}
+.list .sport{
+    float: left;
+    background-position: 0 -121px;
+}
+.list .child{
+    float: left;
+    background-position: 0 -179px;
+}
+.list .exhibition{
+    float: left;
+    background-position: 0 -235px;
+}
+.list .music{
+    float: left;
+    background-position: 0 -292px;
+}
+.list .song{
+    float: left;
+    background-position: 0 -352px;
+}
+.list .dance{
+    float: left;
+    background-position: 0 -415px;
+}
+.list .two{
+    float: left;
+    background-position: 0 -473px;
+}
+.list .travel{
+    float: left;
+    background-position: 0 -534px;
+}
+.list .concert p{
+    margin-left: -4px;
+}
+.list .travel p{
+    margin-left: -16px;
+}
+.list .song p{
+    margin-left: -16px;
+}
+.list .exhibition p{
+    margin-left: -16px;
+}
+.list .child p{
+    margin-left: -16px;
+}
+.list .drama p{
+    margin-left: -16px;
+}
+.list .sport p{
+    margin-left: 5px;
+}
+.list .two p{
+    margin-left: -4px;
+}
+
+
+
+/* 内容 */
+/* 头部 */
+.content {
+    margin-top: 10px;
+    width: 100%;
+}
+.content .disc{
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 457px;
+}
+.content .opera{
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 457px;
+    margin-top: 15px;
+}
+.content .gym{
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 457px;
+    margin-top: 15px;
+}
+.content .partent{
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 457px;
+    margin-top: 15px;
+}
+.content .gym{
+    border:1px solid #eceaea;
+    width: 100%;
+    height: 457px;
+    margin-top: 15px;
+}
+.content .head{
+    width: 100%;
+    height: 40px;
+    margin-top: 26px;
+}
+.content .head .topic{
+    font-size:24px ;
+    margin-left: 34px;
+}
+.content .head .all{
+    font-size:14px ;
+    margin-left: 1000px;
+    color: #9b9b9b;
+}
+.content .head .all a:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+/* 图文混排 */
+.content .picture{
+    margin-left: 34px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.content .picture .milk{
+    float: left;
+    position: relative;
+}
+.content .picture .milk img{
+    width: 272px;
+    height: 362px;
+}
+.content .picture .milk .drag{
+    width: 272px;
+    height: 118px;
+    background-color: #00000080;
+    position: absolute;
+    top: 244px;
+    left: 0;
+}
+.content .picture .milk .drag p{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.content .picture .milk .drag .price{
+    margin-top: 21px;
+}
+.content .picture .milk .drag .price a{
+    font-size: 20px;
+}
+.content .picture .milk .drag .price a span{
+    font-size: 14px;
+}
+.content .picture .milk .drag a{
+    color: #f8f8f8;
+    font-size: 16px;
+}
+.content .picture .milk .drag a:hover{
+    cursor: pointer;
+    color: #ff1268;
+}
+.content .picture .other{
+    float: left;
+    overflow: hidden;
+    margin-left: 27px;
+}
+.content .picture .other img{
+    width: 118px;
+    height: 159px;
+}
+.content .picture .other dt{
+    float: left;
+}
+.content .picture .other dd{
+    width: 136px;
+    height: 160px;
+    float: left;
+    margin-left: 8px;
+}
+.content .picture .other .title{
+    font-size: 14px;
+    color: #4a4a4a;
+}
+.content .picture .other .venue{
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: -24px;
+}
+.content .picture .other .showTime{
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 5px;
+}
+.content .picture .other .price{
+    font-size: 16px;
+    color: #ff1268;
+    margin-top: 52px;
+}
+.content .picture .other a:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+/* 尾部 */
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.footer .footerTitle{
+    width: 100%;
+    height: 91px;
+    
+}
+
+.footer .footerTitle ul{
+    overflow: hidden;
+    margin-left: 198px;
+    margin-top: 81px;
+}
+.footer .footerTitle ul li {
+    float: left;
+    margin-left: 15px;
+}
+.footer .footerTitle ul li a{
+    font-size: 13px;
+
+}
+.footer .footerTitle ul li a:hover{
+    color: #ff1268;
+    cursor: pointer;
+}
+.footer .footerMain{
+    width: 100%;
+    
+    margin-top: -38px;
+    overflow: hidden;
+}
+.footer .footerMain .figure{
+    position: relative;
+    float: left;
+}
+.footer .footerMain .figure img[alt="logoFooter"]{
+    width: 167px;
+    height: 60px;
+    margin-left: 71px;
+}
+
+.footer .footerMain .figure img[alt="code"]{
+    width: 87px;
+    height: 87px;
+    margin-left: 37px;
+    margin-top: 10px;
+}
+.footer .footerMain .figure p{
+    font-size: 14px;
+    position: absolute;
+    top: 105px;
+    left: 291px;
+}
+.footer .footerMain .remark{
+    float: left;
+    margin-left: 69px;
+}
+.footer .footerMain .remark button{
+    width: 98px;
+    height: 27px;
+    border-radius: 17px;
+    border: 1px solid #ff1268;
+    background-color: #ff1268;
+}
+.footer .footerMain .remark button a{
+    font-size: 14px;
+    color: white;
+}
+.footer .footerMain .remark  p{
+    margin-top: 10px;
+    line-height: 26px;
+    font-size: 13px;
+}
+.footer .footerMain .remark  p a:hover{
+    color: #ff1268;
+}
+.footer .footerMain .remark img[alt="permit"]{
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+}
+.footer .footerMain .remark img[alt="pc2"]{
+    width: 49px;
+    height: 30px;
+    margin-top: 5px;
+}
+.footer .footerMain .remark img[alt="logoNet"]{
+    width: 57px;
+    height: 30px;
+    margin-top: 5px;
+}
+.footer .footerMain .remark  a:hover{
+    cursor: pointer;
+}
