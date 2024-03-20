@@ -1,0 +1,13 @@
+.text{
+    position: absolute;
+    bottom: 0;
+    height: 140px;
+    background-color: antiquewhite;
+}
+.sendBtn{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    width: 75px;
+    height: 40px;
+}
