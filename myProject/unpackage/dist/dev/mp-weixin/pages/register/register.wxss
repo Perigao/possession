@@ -1,0 +1,27 @@
+
+.register{
+	width: 100%;
+	box-sizing: border-box
+}.avatar {
+	width: 350rpx;
+	height: 350rpx;
+	margin: 200rpx 200rpx 10rpx;
+}.input {
+	margin-left: 27rpx;
+	margin-top: 23rpx;
+	width: 100%;
+}.btn{
+	width: 98%;
+	margin: 0 auto;
+}.van-button--normal {
+    font-size: var(--button-normal-font-size,14px);
+    padding: 0 ;
+	width: 95%;
+	margin-left: 24rpx;
+}.goToRegister{
+	color: blue;
+	margin-left: 454rpx;
+	margin-top: 25rpx;
+}
+
+

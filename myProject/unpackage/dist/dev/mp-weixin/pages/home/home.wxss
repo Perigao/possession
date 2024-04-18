@@ -1,0 +1,65 @@
+
+.img {
+	width: 100%;
+}
+.noticeSwiper {
+	width: 668rpx;
+}
+.prodName{
+	height: 51rpx;
+    overflow: hidden;
+}
+.productList{
+	width: 100%;
+}
+.productContent{
+	width: 100%;
+	margin-top: 20rpx
+}
+.pictures{
+	width: 202rpx;
+	height: 192rpx;
+	border-radius:5%;
+}
+.listTop{
+	width: 100%;
+	height: 55rpx;
+	display: flex;
+	flex-direction: wrap;
+}
+.partTitle{
+	flex: 9;
+}
+.selectMore{
+	flex:2;
+	font-size: 16rpx;
+	color: gray;
+	margin-top: 10rpx;
+}
+.listContent{
+	width: 100%;
+	height: 500rpx;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -90rpx;
+	margin-bottom: 245rpx;
+}
+.partContent{
+	width:calc(33.33% - 20px);
+	height: 201rpx;
+    margin-left: 27rpx;
+    font-size: 20rpx;
+	margin-bottom: 20rpx;
+	margin-top: 100rpx;
+}
+.price{
+	color: red;
+	font: 21rpx;
+}
+
+/* van-grid-item{
+	width: 30rpx;
+	height: 30rpx;
+} */
+
+

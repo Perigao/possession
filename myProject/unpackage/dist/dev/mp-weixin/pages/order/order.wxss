@@ -1,0 +1,11 @@
+.van-cell__left-icon-wrap {
+  margin-top: 27rpx;
+  padding-right: 20rpx;
+}
+.van-icon-arrow {
+  margin-top: 48rpx;
+}
+.sale .van-icon-arrow {
+  margin-top: 0;
+}
+

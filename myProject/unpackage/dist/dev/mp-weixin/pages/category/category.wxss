@@ -1,0 +1,9 @@
+
+.imageBanner{
+	height: 180rpx;
+	width: 100%;
+}.van-tree-select__content{
+	flex: 3 !important;
+}
+
+

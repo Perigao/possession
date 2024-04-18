@@ -1,0 +1,155 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单确认页面"
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "list"
+			}
+		},
+		{
+			"path": "pages/adress/adress",
+			"style": {
+				"navigationBarTitleText": "list"
+			}
+		}
+
+	],
+	"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#ff0000",
+			"borderStyle": "black",
+			"backgroundColor": "#ffffff",
+			"list": [
+				{
+					"pagePath": "pages/home/home",
+					"iconPath": "static/image/home.png",
+					"selectedIconPath": "static/image/home1.png",
+					"text": "首页"
+				}, 
+				{
+					"pagePath": "pages/category/category",
+					"iconPath": "static/image/category.png",
+					"selectedIconPath": "static/image/category1.png",
+					"text": "分类"
+				}, 
+				{
+					"pagePath": "pages/shop/shop",
+					"iconPath": "static/image/shop.png",
+					"selectedIconPath": "static/image/shop1.png",
+					"text": "购物车"
+				}, 
+				{
+					"pagePath": "pages/my/my",
+					"iconPath": "static/image/my.png",
+					"selectedIconPath": "static/image/my1.png",
+					"text": "我的"
+				}
+			]
+		},
+		"globalStyle": {
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "uni-app",
+			"navigationBarBackgroundColor": "#ff0000",
+			"backgroundColor": "#F8F8F8",
+			"usingComponents": {
+				"van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+				"van-area": "/wxcomponents/vant/area/index",
+				"van-button": "/wxcomponents/vant/button/index",
+				"van-field": "/wxcomponents/vant/field/index",
+				"van-search": "/wxcomponents/vant/search/index",
+				"van-grid": "/wxcomponents/vant/grid/index",
+				"van-grid-item": "/wxcomponents/vant/grid-item/index",
+				"van-notice-bar": "/wxcomponents/vant/notice-bar/index",
+				"van-tree-select": "/wxcomponents/vant/tree-select/index",
+				"van-card": "/wxcomponents/vant/card/index",
+				"van-cell": "/wxcomponents/vant/cell/index",
+				"van-cell-group": "/wxcomponents/vant/cell-group/index",
+				"van-row": "/wxcomponents/vant/row/index",
+				"van-col": "/wxcomponents/vant/col/index",
+				"van-icon": "/wxcomponents/vant/icon/index",
+				// 分割线
+				"van-divider": "/wxcomponents/vant/divider/index",
+				// 排版单元格
+				"van-cell": "/wxcomponents/vant/cell/index",
+				"van-cell-group": "/wxcomponents/vant/cell-group/index",
+				// 评论模块用的tag
+				"van-tag": "/wxcomponents/vant/tag/index",
+				// 详情页下方导航栏
+				"van-goods-action": "/wxcomponents/vant/goods-action/index",
+				"van-goods-action-icon": "/wxcomponents/vant/goods-action-icon/index",
+				"van-goods-action-button": "/wxcomponents/vant/goods-action-button/index",
+				// 立即购买点击弹出动作面板
+				"van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+				// 步进器
+				"van-stepper": "/wxcomponents/vant/stepper/index",
+				// 提交
+				"van-submit-bar": "/wxcomponents/vant/submit-bar/index",
+				// 我的 图像
+				"van-image": "/wxcomponents/vant/image/index"
+			}
+		},
+		"uniIdRouter": {},
+		"condition": { //模式配置，仅开发期间生效
+			"current": 0, //当前激活的模式(list 的索引项)
+			"list": [{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}]
+		}
+	}
